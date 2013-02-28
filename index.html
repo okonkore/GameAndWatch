@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="resource/icon.png" />
+
+<title>Game &amp; Watch</title>
+<script type="text/javascript" src="./enchant.js"></script>
+<script type="text/javascript">
+	enchant();
+	Array.prototype.shuffle = function() {
+		var i = this.length;
+		while (i) {
+			var j = Math.floor(Math.random() * i);
+			var t = this[--i];
+			this[i] = this[j];
+			this[j] = t;
+		}
+		return this;
+	};
+	Array.prototype.contains = function(item) {
+		for ( var i = 0; i < this.length; i++) {
+			if (item == this[i]) {
+				return true;
+			}
+		}
+		return false;
+	};
+</script>
+
+<script type="text/javascript" src="./Actress.js"></script>
+</head>
+<body marginheight="0" marginwidth="0" rightmargin="0" leftmargin="0" topmargin="0" bottommargin="0">
+</body>
+</html>
